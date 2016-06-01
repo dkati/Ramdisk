@@ -700,6 +700,7 @@ service racoon /system/bin/racoon
     group vpn net_admin inet
     disabled
     oneshot
+    writepid /dev/cpuset/system-background/tasks
 
 service mtpd /system/bin/mtpd
     class main
